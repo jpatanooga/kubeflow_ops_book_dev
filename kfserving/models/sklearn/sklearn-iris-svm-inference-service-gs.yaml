@@ -1,0 +1,10 @@
+apiVersion: "serving.kubeflow.org/v1alpha2"
+kind: "InferenceService"
+metadata:
+  name: "sklearn-iris-gs"
+spec:
+  default:
+    predictor:
+      minReplicas: 1
+      sklearn:
+        storageUri: "gs://pct-tmp"

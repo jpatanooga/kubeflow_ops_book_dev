@@ -1,0 +1,38 @@
+
+
+http://my-tf-flowers-model.default.example.com/v1/models/my-tf-flowers-model
+
+
+curl -v -H "Host: my-tf-flowers-model.default.example.com" http://localhost:8080/v1/models/my-tf-flowers-model:predict -d @./tf_flowers_input.json
+
+
+
+
+*   Trying ::1:8080...
+* Connected to localhost (::1) port 8080 (#0)
+> POST /v1/models/my-tf-flowers-model:predict HTTP/1.1
+> Host: my-tf-flowers-model.default.example.com
+> User-Agent: curl/7.69.1
+> Accept: */*
+> Content-Length: 16201
+> Content-Type: application/x-www-form-urlencoded
+> 
+* upload completely sent off: 16201 out of 16201 bytes
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< content-length: 220
+< content-type: application/json
+< date: Tue, 19 May 2020 18:20:41 GMT
+< x-envoy-upstream-service-time: 850
+< server: istio-envoy
+< 
+{
+    "predictions": [
+        {
+            "scores": [0.999114931, 9.2098875e-05, 0.000136786344, 0.000337257865, 0.000300532876, 1.8481378e-05],
+            "prediction": 0,
+            "key": "   1"
+        }
+    ]
+* Connection #0 to host localhost left intact
+}%

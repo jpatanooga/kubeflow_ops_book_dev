@@ -108,6 +108,6 @@ class KFServing_BERT_QA_Model(kfserving.KFModel):
 
 
 if __name__ == "__main__":
-    model = KFServing_BERT_QA_Model("kfserving-bert-qa-model")
+    model = KFServing_BERT_QA_Model("kfserving-custom-model")
     model.load()
     kfserving.KFServer(workers=1).start([model])

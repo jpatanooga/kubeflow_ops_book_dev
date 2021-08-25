@@ -40,4 +40,4 @@ tornado==6.0.3
 urllib3==1.25.8
 websocket-client==0.57.0
 transformers==2.1.1
-tensorflow==2.2.0
+tensorflow==2.5.1

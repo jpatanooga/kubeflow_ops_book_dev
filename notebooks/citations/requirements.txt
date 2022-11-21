@@ -94,7 +94,7 @@ sklearn==0.0
 tensorboard-plugin-wit==1.6.0.post3
 tensorboard==2.2.2
 tensorflow-estimator==2.2.0
-tensorflow==2.2.0
+tensorflow==2.9.3
 termcolor==1.1.0
 terminado==0.8.3
 testpath==0.4.4
